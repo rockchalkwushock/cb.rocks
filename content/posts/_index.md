@@ -1,6 +1,6 @@
 ---
 author: "Cody Brunner"
 description: "Cody Brunner's tech and personal blog."
-title: "RCWS|Blog"
+title: "Cody's Blog"
 type: "page"
 ---
