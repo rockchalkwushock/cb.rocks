@@ -10,14 +10,13 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.4;
+  margin: auto;
+  max-width: 800px;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-body,
-.wrapper,
 header,
-main,
 nav,
 footer {
   align-items: center;
@@ -73,12 +72,6 @@ ul {
   margin: 2em 0;
 }
 
-.wrapper > * {
-  flex: 1 1 auto;
-}
-
-@media (min-width: 768px) {
-  body {
-    font-size: 1.1em;
-  }
+main h1 {
+  text-align: center;
 }

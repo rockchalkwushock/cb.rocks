@@ -17,4 +17,4 @@ mediumUrl: ""
 
 > **Happy Coding!**
 
-**~ Cody** :rocket:
+> **~ Cody** :rocket:

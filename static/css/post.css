@@ -1,12 +1,12 @@
 article.post {
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 2em;
 }
 
-.post-heading {
+.post-heading,
+.extra {
   text-align: center;
 }
 
@@ -33,7 +33,6 @@ article.post {
 }
 
 .post-body {
-  align-items: center;
   display: flex;
   flex-direction: column;
   font-size: 1em;
