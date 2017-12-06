@@ -7,7 +7,7 @@
 html,
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 400;
   line-height: 1.4;
   min-height: 100vh;
@@ -17,6 +17,7 @@ body {
 body,
 .wrapper,
 header,
+main,
 nav,
 footer {
   align-items: center;
@@ -44,7 +45,7 @@ footer {
 }
 
 hr {
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
   opacity: 0.5;
   width: 100%;
 }
@@ -74,4 +75,10 @@ ul {
 
 .wrapper > * {
   flex: 1 1 auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1em;
+  }
 }

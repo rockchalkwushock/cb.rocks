@@ -1,0 +1,77 @@
+article.post {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2em;
+}
+
+.post-heading {
+  text-align: center;
+}
+
+.post-heading h1 {
+  font-family: 'Handlee', cursive;
+}
+
+.headline {
+  padding: 0.25em 0 1em 0;
+}
+
+.headline h2 {
+  font-size: 1em;
+}
+
+.tag-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.tags {
+  font-size: 0.9em;
+}
+
+.post-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.post-body blockquote {
+  text-align: center;
+}
+
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4 {
+  font-family: 'Handlee', cursive;
+  padding: 0.5em 0;
+}
+
+.post-body p {
+  line-height: 1.6;
+  padding: 0.25em 0;
+}
+
+.post-body p code {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.post-body pre {
+  padding: 0.5em 0;
+}
+
+.post-body ol {
+  margin: 1em 0 1em 1.5em;
+}
+
+.post-body ol li,
+.post-body ul li {
+  line-height: 1.6;
+  margin-bottom: 0.1em;
+}

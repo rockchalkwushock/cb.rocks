@@ -1,0 +1,48 @@
+{{ define "main" }}
+<main>
+  <article class="post">
+    <header class="post-heading">
+      <h1>{{ .Title }}</h1>
+      <div class="headline">
+      <h2>
+        {{ .Date.Format "Jan 2, 2006" }}
+      </h2>
+      <h2>
+        {{ if lt 1 .WordCount }}
+          {{ .WordCount }} words
+        {{ else }}
+          {{ .WordCount }} word
+        {{ end }}
+        · {{ if eq 1 .ReadingTime }}
+          {{ .ReadingTime }} minute read
+        {{ else }}
+          {{ .ReadingTime }} minutes read
+        {{ end }}
+      </h2>
+      <div class="tag-container">
+        <div data-icon="ei-tag" data-size="s"></div>
+        <span class="tags">
+          {{ with .Params.tags }}
+            {{ if ge (len .) 1 }}
+                {{ range . }}
+                  <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+                {{ end }}
+            {{ end }}
+          {{ end}}
+        </span>
+      </div>
+      </div>
+    </header>
+    {{ if .Params.onMedium}}
+      <hr>
+      <section class="extra">
+        Read the article on <a href="{{ .Params.mediumUrl }}">Medium.</a>
+      </section>
+    {{ end }}
+    <hr>
+    <section class="post-body">
+      {{ .Content }}
+    </section>
+  </article>
+</main>
+{{ end }}
