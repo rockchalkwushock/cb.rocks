@@ -7,7 +7,6 @@ description: ""
 type: "post"
 keywords: []
 tags: []
-categories: []
 highlight: false
 onMedium: false
 mediumUrl: ""
