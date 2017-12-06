@@ -1,0 +1,30 @@
+
+.social-icon {
+  fill: #000;
+  height: 40px;
+  opacity: 0.5;
+  width: 40px;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+.icon--ei-sc-facebook:hover {
+  fill: #3b5998;
+}
+.icon--ei-sc-github:hover {
+  fill: #000000;
+}
+.icon--ei-sc-instagram:hover {
+  fill: #ff7f00;
+}
+.icon--ei-sc-linkedin:hover {
+  fill: #0976b4;
+}
+.icon--ei-sc-twitter:hover {
+  fill: #55acee;
+}
+.icon--ei-sc-youtube:hover {
+  fill: #e52d27;
+}

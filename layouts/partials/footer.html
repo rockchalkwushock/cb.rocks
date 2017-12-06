@@ -1,0 +1,12 @@
+<footer>
+  <p>
+    {{ $year := now.Format "2006" }}
+    {{ if eq $year "2017" }}
+      © 2017 RCWS Development
+    {{ else }}
+      © 2017-{{ $year }} RCWS Development
+    {{ end }}
+  </p>
+  <a href="{{ .Site.Copyright }}">Some Rights Reserved</a>
+  <p class="poweredby">Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+</footer>

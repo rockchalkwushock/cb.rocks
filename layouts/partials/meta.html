@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+<meta name="author" content="{{ .Params.author }}">
+<meta name="description" content="{{ .Params.description }}">
+{{ template "_internal/schema.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/opengraph.html" . }}
+<title>{{ .Site.Title }}</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/evil-icons/1.9.0/evil-icons.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+{{ if .Params.highlight }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/rainbow.min.css">
+{{ end }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
