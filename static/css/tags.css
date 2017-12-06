@@ -1,0 +1,32 @@
+section.tags {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 2em 0 2em;
+}
+
+.tagged-post {
+  padding: 0.5em 0;
+}
+
+.post-date {
+  margin-bottom: 0.25em;
+}
+
+.tag-cloud {
+  margin: 2em auto;
+  text-align: center;
+  width: 80%;
+}
+
+@media (orientation: landscape) {
+  section.tags ul {
+    width: 70%;
+  }
+  .tagged-post {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

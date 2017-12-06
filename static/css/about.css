@@ -2,7 +2,7 @@ section.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 2em;
+  margin: 2em;
 }
 
 .about blockquote {

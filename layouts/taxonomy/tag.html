@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main>
+  {{ $tag := .Page.Title }}
+  {{ range .Data.Pages.GroupByDate "2006" }}
+    <h1>{{ .Key }} - {{ $tag }}</h1>
+    <section class="tags">
+      <ul>
+        {{ range .Pages }}
+          <div class="tagged-post">
+            <div class="post-date">{{ .Date.Format "Jan 2" }}</div>
+            <a href="{{ .Permalink }}" class="post-link">
+              {{ .Title }}
+            </a>
+          </div>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+  {{ partial "pagination.html" . }}
+</main>
+{{ end }}

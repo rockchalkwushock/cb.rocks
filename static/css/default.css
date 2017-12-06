@@ -16,6 +16,12 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header,
 nav,
 footer {
@@ -37,6 +43,9 @@ img {
 nav {
   margin: 1em 0;
 }
+nav ul li {
+  margin-bottom: 0.25em;
+}
 
 nav,
 footer {
@@ -46,7 +55,7 @@ footer {
 hr {
   margin: 0.5em 0;
   opacity: 0.5;
-  width: 100%;
+  width: 80%;
 }
 
 footer {
@@ -54,11 +63,23 @@ footer {
   opacity: 0.7;
 }
 
-a {
-  text-decoration: none;
+footer a {
+  opacity: 1;
 }
-a:visited {}
-a:hover {}
+
+a {
+  color: rgba(15, 103, 255, 0.6);
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:visited {
+  color: rgba(15, 103, 255, 0.6);
+}
+a:hover {
+  color: rgba(15, 103, 255, 1);
+}
 
 h1, h2, h3, h4, h5, h6 {
   opacity: 0.8;
@@ -72,6 +93,12 @@ ul {
   margin: 2em 0;
 }
 
+.wrapper hr {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main h1 {
+  font-family: 'Handlee', cursive;
   text-align: center;
 }

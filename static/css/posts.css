@@ -3,6 +3,7 @@
 }
 
 .post-item {
+  background-color: rgba(15, 103, 255, 0.2);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
   margin-bottom: 0.5em;
   padding: 1em;
@@ -12,6 +13,7 @@
 }
 
 .post-item:hover {
+  background-color: rgba(15, 103, 255, 0.7);
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
 }
 
