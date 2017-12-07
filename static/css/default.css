@@ -102,3 +102,7 @@ main h1 {
   font-family: 'Handlee', cursive;
   text-align: center;
 }
+
+.hide {
+  display: none;
+}

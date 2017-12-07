@@ -4,11 +4,13 @@
     {{ range .Site.Menus.main }}
       {{ if and ($currentPage.IsHome) (eq .Identifier "home")}}
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ else if and (eq $currentPage.URL "/about") (eq .Identifier "about")}}
+      {{ else if and (eq $currentPage.URL "/about/") (eq .Identifier "about")}}
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ else if and (eq $currentPage.URL "/posts") (eq .Identifier "blog")}}
+      {{ else if and (eq $currentPage.URL "/posts/") (eq .Identifier "blog")}}
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ else if and (eq $currentPage.URL "/portfolio") (eq .Identifier "portfolio")}}
+      {{ else if and (eq $currentPage.URL "/tags/") (eq .Identifier "tag")}}
+        <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ else if and (eq $currentPage.URL "/portfolio/") (eq .Identifier "portfolio")}}
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
       {{ else }}
         <li><a href="{{ .URL }}">{{ .Name }}</a></li>
