@@ -1,0 +1,9 @@
+li.cert-card {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+img.cert-img {
+  margin-bottom: 0;
+}

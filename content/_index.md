@@ -6,5 +6,3 @@ subTitle: "Full-stack JavaScript Developer"
 title: "RCWS Development"
 type: "page"
 ---
-
-This is some content

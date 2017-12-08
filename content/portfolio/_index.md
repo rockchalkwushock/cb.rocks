@@ -1,7 +1,7 @@
 ---
 author: "Cody Brunner"
 description: "Cody Brunner's web development portfolio."
-title: "RCWS|Portfolio"
+title: "Cody's Portfolio"
 type: "page"
 extraScripts: true
 ---
