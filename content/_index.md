@@ -5,4 +5,7 @@ image: "https://res.cloudinary.com/rockchalkwushock/c_thumb,f_auto,g_center,h_18
 subTitle: "Full-stack JavaScript Developer"
 title: "RCWS Development"
 type: "page"
+cloud: false
+evil: true
+flip: false
 ---

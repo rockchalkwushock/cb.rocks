@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-  <h1>{{ .Page.Title }}</h1>
+  <h1>{{ .Title }}</h1>
   <section id="tags" class="tag-cloud">
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
       <span class="tags">

@@ -3,6 +3,9 @@ author: "Cody Brunner"
 description: "Cody Brunner's profile."
 title: "About me"
 type: "page"
+cloud: false
+evil: false
+flip: false
 ---
 
 Why hello there you sexy bot...I mean possible user not trolling my site :wink: Pleasure to make your internet acquaintance. My name is Cody and I'm a 29 year old full-stack JavaScript developer from [Wichita, Kansas](https://www.google.com/maps/place/Wichita,+KS/@37.6645261,-97.5837757,11z/data=!3m1!4b1!4m5!3m4!1s0x87badb6ad27f182d:0x9396d5bf74d33d3e!8m2!3d37.6871761!4d-97.330053?hl=en). Yep I just linked where I'm from because you were like: _"Where?"_, oh it's a fly-over state, gotcha! I've walked a really long and interesting path to get where I am today. I have studied medicine, law, & engineering so I'm pretty learned at this point :joy:. I served in the US Navy & in Afghanistan in 2010. In 2016, ultimately very unhappy with my last place of employment, the work I was doing, and studies in engineering I walked away from all of it. Sitting on the bank of Elliot Bay in Seattle, Washington I asked myself:
