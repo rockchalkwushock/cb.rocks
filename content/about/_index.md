@@ -38,6 +38,8 @@ Studying algorithms and job hunting is my primary goal at the moment. Side proje
 
 Does this guy sound like a match for your company? Is the excessive use of emojis tantalizing?
 
-Outstanding! Here is my [resume](https://www.dropbox.com/s/5mc2a3iafuoijnt/Cody%20A%20Brunner%20-%20Web%20Developer%20Resume.pdf?dl=1) and you can reach me [here](mailto:rockchalkwushock@icloud.com). I look forward to meeting you and nailing the interview!
+Outstanding, I look forward to meeting you, the team, and nailing the interview!
+
+{{< link "rockchalkwushock@icloud.com" "https://www.dropbox.com/s/5mc2a3iafuoijnt/Cody%20A%20Brunner%20-%20Web%20Developer%20Resume.pdf?dl=1" >}}
 
 > **~ Cody** :rocket:

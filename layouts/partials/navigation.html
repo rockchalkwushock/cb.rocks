@@ -12,6 +12,8 @@
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
       {{ else if and (eq $currentPage.URL "/portfolio/") (eq .Identifier "portfolio")}}
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ else if and (eq $currentPage.URL "/certs/") (eq .Identifier "certifications")}}
+        <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
       {{ else }}
         <li><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
