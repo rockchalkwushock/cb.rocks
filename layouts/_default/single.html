@@ -43,6 +43,7 @@
     <section class="post-body" itemprop="articleBody">
       {{ .Content }}
     </section>
+    {{ partial "disqus.html" . }}
   </article>
 </main>
 {{ end }}
