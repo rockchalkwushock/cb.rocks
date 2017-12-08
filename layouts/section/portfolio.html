@@ -1,7 +1,8 @@
 {{ define "main" }}
 <main>
+    <h1>{{ .Title }}</h1>
   <section class="portfolio">
-    <ul id="cards">
+    <ul class="grid" id="cards">
       {{ range .Site.Data.projects }}
         <li id="card-{{ .id }}" class="card">
           <div class="front side">
