@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
+lastMod: {{ .Date }}
 draft: true
 author: "Cody Brunner"
 description: ""
@@ -19,4 +20,4 @@ mediumUrl: ""
 
 > **Happy Coding!**
 
-> **~ Cody** :rocket:
+**~ Cody** :rocket:

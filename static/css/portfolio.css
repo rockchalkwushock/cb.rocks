@@ -44,6 +44,7 @@ a.card-link {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
+  letter-spacing: 2px;
   padding: 0.5em 0.75em;
 }
 

@@ -33,9 +33,6 @@ article.post {
 }
 
 .post-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-top: 1em;
 }
 
@@ -72,4 +69,8 @@ article.post {
 .post-body ul li {
   line-height: 1.6;
   margin-bottom: 0.1em;
+}
+
+.post-body p:last-of-type {
+  text-align: center;
 }
