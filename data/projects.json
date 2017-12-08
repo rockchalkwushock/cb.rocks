@@ -1,0 +1,70 @@
+{
+  "one": {
+    "desc": "Photography Portfolio & Business Progressive Web Application built with NextJS.",
+    "id": 0,
+    "name": "masha eltsova photography",
+    "site": "https://mashaeltsovaphotography.com/",
+    "source": "https://github.com/rockchalkwushock/mashaeltsova-photography/"
+  },
+  "two": {
+    "desc": "My web development portfolio & blog website built with Hugo.",
+    "id": 1,
+    "name": "codybrunner.rocks",
+    "site": "https://codybrunner.rocks/",
+    "source": "https://github.com/rockchalkwushock/codybrunner.rocks/"
+  },
+  "three": {
+    "desc": "Simple weather web application built with React & GraphQL.",
+    "id": 2,
+    "name": "the rising sun",
+    "site": "https://the-rising-sun.now.sh/",
+    "source": "https://github.com/rockchalkwushock/react-weather-app/"
+  },
+  "four": {
+    "desc": "Express GraphQL API for The Rising Sun.",
+    "id": 3,
+    "name": "react-weather-api",
+    "source": "https://github.com/rockchalkwushock/react-weather-api/"
+  },
+  "five": {
+    "desc": "Blindfold'em is a productivity management web-application built with NextJS.",
+    "id": 4,
+    "name": "blindfold'em",
+    "site": "https://blindfold-em.now.sh/",
+    "source": "https://github.com/rockchalkwushock/blindfold-em/"
+  },
+  "six": {
+    "desc": "Vkontakte Oauth for Micro.",
+    "id": 5,
+    "name": "microauth-vkontakte",
+    "site": "https://www.npmjs.com/package/microauth-vkontakte/",
+    "source": "https://github.com/microauth/microauth-vkontakte/"
+  },
+  "seven": {
+    "desc": "My first OSS project, about making an OSS project.",
+    "id": 6,
+    "name": "how-to-open-source",
+    "site": "https://www.npmjs.com/package/how-to-open-source/",
+    "source": "https://github.com/rockchalkwushock/how-to-open-source/"
+  },
+  "eight": {
+    "desc": "Mail client for Masha Eltsova Photography built with MicroJS.",
+    "id": 7,
+    "name": "mep api",
+    "source": "https://github.com/rockchalkwushock/mep-api/"
+  },
+  "nine": {
+    "desc": "My original blog built with NextJS.",
+    "id": 8,
+    "name": "rcws development",
+    "site": "https://rcws-development-v2.now.sh/",
+    "source": "https://github.com/rockchalkwushock/my-blog/"
+  },
+  "ten": {
+    "desc": "ExpressJS API built for a student to use with React Application.",
+    "id": 9,
+    "name": "note dashboard",
+    "site": "http://picayune-fold.surge.sh/",
+    "source": "https://github.com/rockchalkwushock/note_dashboard/"
+  }
+}

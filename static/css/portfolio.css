@@ -1,0 +1,60 @@
+section.portfolio {
+  margin: 2em;
+}
+
+section.portfolio ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li.card {
+  height: 150px;
+  margin-bottom: 1em;
+  transform-style: preserve-3d;
+}
+
+.side {
+  backface-visibility: hidden;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: absolute;
+}
+
+.front {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.back p {
+  flex: 2;
+  text-align: center;
+}
+
+.card-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  padding-top: 0.75em;
+}
+
+a.card-link {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  padding: 0.5em 0.75em;
+}
+
+@media (min-width: 375px) {
+  li.card {
+    width: 300px;
+  }
+}

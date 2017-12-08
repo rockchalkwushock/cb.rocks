@@ -1,7 +1,24 @@
 {{ define "main" }}
 <main>
   <section class="portfolio">
-    something here
+    <ul id="cards">
+      {{ range .Site.Data.projects }}
+        <li id="card-{{ .id }}" class="card">
+          <div class="front side">
+            <h1>{{ .name }}</h1>
+          </div>
+          <div class="back side">
+            <p>{{ .desc }}</p>
+            <div class="card-links">
+              {{ if .site }}
+                <a href="{{ .site }}" class="card-link">Demo</a>
+              {{ end }}
+              <a href="{{ .source }}" class="card-link">Source</a>
+            </div>
+          </div>
+        </li>
+      {{ end }}
+    </ul>
   </section>
 </main>
 {{ end }}
