@@ -2,7 +2,7 @@
 <main>
   <article class="post">
     <header class="post-heading">
-      <h1>{{ .Title }}</h1>
+      <h1 itemprop="headline">{{ .Title }}</h1>
       <div class="headline">
       <h2>
         {{ .Date.Format "Jan 2, 2006" }}
@@ -40,7 +40,7 @@
       </section>
     {{ end }}
     <hr>
-    <section class="post-body">
+    <section class="post-body" itemprop="articleBody">
       {{ .Content }}
     </section>
   </article>

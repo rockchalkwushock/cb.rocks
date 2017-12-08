@@ -1,9 +1,11 @@
 ---
+title: "Tags"
+date: 2017-12-08T11:36:42-06:00
+lastMod: 2017-12-08T11:36:42-06:00
 author: "Cody Brunner"
 description: "Tags for finding relevant categories in Cody Brunner's Blog."
-title: "Tags"
 type: "page"
 cloud: true
-evil: false
+evil: true
 flip: false
 ---

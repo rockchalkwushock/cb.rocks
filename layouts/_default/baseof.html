@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
+<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }} itemscope itemtype="{{ if or (eq .Page.Type "post") (eq .Page.URL "/about/")}}http://schema.org/Article{{ else }}http://schema.org/WebPage{{ end }}">
 <head>
   {{ partial "meta.html" . }}
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper" itemprop="mainContentOfPage">
     {{ block "main" . }} {{ end }}
     {{ partial "navigation.html" . }}
     <hr>

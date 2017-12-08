@@ -1,11 +1,13 @@
 ---
+title: "RCWS Development"
+date: 2017-12-08T11:36:42-06:00
+lastMod: 2017-12-08T11:36:42-06:00
 author: "Cody Brunner"
 description: "Web development portfolio & blog for Cody Brunner."
-image: "https://res.cloudinary.com/rockchalkwushock/c_thumb,f_auto,g_center,h_180,r_max,q_auto:best,w_180/profile_pic.jpg"
-subTitle: "Full-stack JavaScript Developer"
-title: "RCWS Development"
 type: "page"
 cloud: false
 evil: true
 flip: false
+image: "https://res.cloudinary.com/rockchalkwushock/c_thumb,f_auto,g_center,h_180,r_max,q_auto:best,w_180/profile_pic.jpg"
+subTitle: "Full-stack JavaScript Developer"
 ---

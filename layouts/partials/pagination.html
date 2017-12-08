@@ -1,20 +1,20 @@
 <nav class="paginator">
     {{ if .Paginator.HasPrev }}
-        <a class="pagination-link" href="{{ .Paginator.Prev.URL }}">
+        <a class="pagination-link" href="{{ .Paginator.Prev.URL }}" itemprop="pagination">
             <div data-icon="ei-chevron-left" data-size="m"></div>
         </a>
     {{ else }}
-        <a class="pagination-link" href="#">
+        <a class="pagination-link" href="#" itemprop="pagination">
             <div class="disabled" data-icon="ei-chevron-left" data-size="m"></div>
         </a>
     {{ end }}
     <p class="paginator-pages">{{ .Paginator.PageNumber }} - {{ .Paginator.TotalPages }}</p>
     {{ if .Paginator.HasNext }}
-        <a class="pagination-link" href="{{ .Paginator.Next.URL }}">
+        <a class="pagination-link" href="{{ .Paginator.Next.URL }}" itemprop="pagination">
             <div data-icon="ei-chevron-right" data-size="m"></div>
         </a>
     {{ else }}
-        <a class="pagination-link" href="#">
+        <a class="pagination-link" href="#" itemprop="pagination">
             <div class="disabled" data-icon="ei-chevron-right" data-size="m"></div>
         </a>
     {{ end }}
