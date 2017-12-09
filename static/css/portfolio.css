@@ -22,6 +22,18 @@ ul.grid {
   justify-content: center;
 }
 
+div.tech {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+img.tech-icon {
+  height: 50px;
+  padding: 0 0.25em;
+  width: 50px;
+}
+
 .back {
   display: flex;
   flex-direction: column;
@@ -43,9 +55,10 @@ ul.grid {
 a.card-link {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  display: flex;
   letter-spacing: 2px;
   padding: 0.5em 0.75em;
+  text-align: center;
+  width: 80px;
 }
 
 @media (min-width: 900px) {

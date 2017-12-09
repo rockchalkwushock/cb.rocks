@@ -1,70 +1,80 @@
 {
   "one": {
-    "desc": "Photography Portfolio & Business Progressive Web Application built with NextJS.",
+    "desc": "Photography Portfolio & Business Progressive Web Application built with Next.",
     "id": 0,
     "name": "masha eltsova photography",
     "site": "https://mashaeltsovaphotography.com/",
-    "source": "https://github.com/rockchalkwushock/mashaeltsova-photography/"
+    "source": "https://github.com/rockchalkwushock/mashaeltsova-photography/",
+    "tech": ["nextjs", "react"]
   },
   "two": {
-    "desc": "My web development portfolio & blog website built with Hugo.",
+    "desc": "My web development portfolio & blog website built with Hugo with a little jQuery.",
     "id": 1,
     "name": "codybrunner.rocks",
     "site": "https://codybrunner.rocks/",
-    "source": "https://github.com/rockchalkwushock/codybrunner.rocks/"
+    "source": "https://github.com/rockchalkwushock/codybrunner.rocks/",
+    "tech": ["css-3", "html-5", "jquery", "markdown"]
   },
   "three": {
-    "desc": "Simple weather web application built with React & GraphQL.",
+    "desc": "Simple weather web application built with GraphQL, MaterializeCSS, & React. The project uses Preact at build time & react-weather-api.",
     "id": 2,
     "name": "the rising sun",
     "site": "https://the-rising-sun.now.sh/",
-    "source": "https://github.com/rockchalkwushock/react-weather-app/"
+    "source": "https://github.com/rockchalkwushock/react-weather-app/",
+    "tech": ["apollo", "graphql", "jest", "materialize", "preact"]
   },
   "four": {
-    "desc": "Express GraphQL API for The Rising Sun.",
+    "desc": "Express GraphQL API for The Rising Sun weather app. Uses the Apixu API under the hood.",
     "id": 3,
     "name": "react-weather-api",
-    "source": "https://github.com/rockchalkwushock/react-weather-api/"
+    "source": "https://github.com/rockchalkwushock/react-weather-api/",
+    "tech": ["circleci", "graphql", "jest", "nodejs"]
   },
   "five": {
-    "desc": "Blindfold'em is a productivity management web-application built with NextJS.",
+    "desc": "Blindfold'em is a simple pomodoro app built with Moment, Next, & React.",
     "id": 4,
     "name": "blindfold'em",
     "site": "https://blindfold-em.now.sh/",
-    "source": "https://github.com/rockchalkwushock/blindfold-em/"
+    "source": "https://github.com/rockchalkwushock/blindfold-em/",
+    "tech": ["circleci", "jest", "momentjs", "nextjs", "react"]
   },
   "six": {
     "desc": "Vkontakte Oauth for Micro.",
     "id": 5,
     "name": "microauth-vkontakte",
     "site": "https://www.npmjs.com/package/microauth-vkontakte/",
-    "source": "https://github.com/microauth/microauth-vkontakte/"
+    "source": "https://github.com/microauth/microauth-vkontakte/",
+    "tech": ["circleci", "jest", "npm", "yarn"]
   },
   "seven": {
     "desc": "My first OSS project, about making an OSS project.",
     "id": 6,
     "name": "how-to-open-source",
     "site": "https://www.npmjs.com/package/how-to-open-source/",
-    "source": "https://github.com/rockchalkwushock/how-to-open-source/"
+    "source": "https://github.com/rockchalkwushock/how-to-open-source/",
+    "tech": ["jest", "npm", "rollupjs", "travis-ci", "yarn"]
   },
   "eight": {
-    "desc": "Mail client for Masha Eltsova Photography built with MicroJS.",
+    "desc": "API for Masha Eltsova Photography built with Micro. Receives GET requests for image urls & POST requests for the Nodemailer mail client.",
     "id": 7,
     "name": "mep api",
-    "source": "https://github.com/rockchalkwushock/mep-api/"
+    "source": "https://github.com/rockchalkwushock/mep-api/",
+    "tech": ["mongodb", "nodejs"]
   },
   "nine": {
-    "desc": "My original blog built with NextJS.",
+    "desc": "My original blog built with Next & React.",
     "id": 8,
     "name": "rcws development",
     "site": "https://rcws-development-v2.now.sh/",
-    "source": "https://github.com/rockchalkwushock/my-blog/"
+    "source": "https://github.com/rockchalkwushock/my-blog/",
+    "tech": ["nextjs", "react"]
   },
   "ten": {
-    "desc": "ExpressJS API built for a student to use with React Application.",
+    "desc": "API built using Express & MongoDB. This was for a student to use with a React Application.",
     "id": 9,
     "name": "note dashboard",
     "site": "http://picayune-fold.surge.sh/",
-    "source": "https://github.com/rockchalkwushock/note_dashboard/"
+    "source": "https://github.com/rockchalkwushock/note_dashboard/",
+    "tech": ["jest", "mongodb", "nodejs", "travis-ci", "webpack"]
   }
 }

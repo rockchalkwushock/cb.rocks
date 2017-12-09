@@ -4,9 +4,14 @@
   <section class="portfolio">
     <ul class="grid" id="cards">
       {{ range .Site.Data.projects }}
-        <li id="card-{{ .id }}" class="card">
+        <li id="card-{{ .id }}" class="card" data-key="{{ .id }}">
           <div class="front side">
             <h1>{{ .name }}</h1>
+            <div class="tech">
+              {{ range .tech }}
+                <img alt="{{ . }}-icon" class="tech-icon" src="https://res.cloudinary.com/rockchalkwushock/{{ . }}.svg">
+              {{ end }}
+            </div>
           </div>
           <div class="back side">
             <p>{{ .desc }}</p>
@@ -14,7 +19,7 @@
               {{ if .site }}
                 <a href="{{ .site }}" class="card-link">Site</a>
               {{ end }}
-              <a href="{{ .source }}" class="card-link">Source</a>
+              <a href="{{ .source }}" class="card-link">Code</a>
             </div>
           </div>
         </li>
