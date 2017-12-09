@@ -11,12 +11,13 @@ ul.grid {
 
 .side {
   backface-visibility: hidden;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 20px rgba(47, 73, 110, 0.5);
   overflow: hidden;
 }
 
 .front {
   align-content: center;
+  background-color: rgba(237, 140, 114, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +36,7 @@ img.tech-icon {
 }
 
 .back {
+  background-color: rgba(41, 136, 188, 0.5);
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -53,8 +55,9 @@ img.tech-icon {
 }
 
 a.card-link {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(244, 234, 222, 0.7);
+  border-radius: 10px;
+  color: #2988bc;
   letter-spacing: 2px;
   padding: 0.5em 0.75em;
   text-align: center;

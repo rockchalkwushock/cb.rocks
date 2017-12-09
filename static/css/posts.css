@@ -3,29 +3,26 @@
 }
 
 .post-item {
-  background-color: rgba(15, 103, 255, 0.2);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  background-color: rgba(237, 140, 114, 0.5);
+  box-shadow: 10px 10px 10px rgba(47, 73, 110, 0.7);
   margin-bottom: 0.5em;
   padding: 1em;
+  transform: scale(0.95);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .post-item:hover {
-  background-color: rgba(15, 103, 255, 0.7);
-  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
-}
-
-.post-link {
-
+  box-shadow: 2px 2px 2px rgba(47, 73, 110, 0.7);
+  transform: scale(1);
 }
 
 .post-item-header {
-  color: #000;
+  color: #2f496e;
   font-family: 'Handlee', cursive;
 }
 
 .post-item-content {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(47, 73, 110, 0.7);
 }

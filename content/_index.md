@@ -8,6 +8,6 @@ type: "page"
 cloud: false
 evil: true
 flip: false
-image: "https://res.cloudinary.com/rockchalkwushock/c_thumb,f_auto,g_center,h_180,r_max,q_auto:best,w_180/profile_pic.jpg"
+image: "https://res.cloudinary.com/rockchalkwushock/b_rgb:f4eade,c_thumb,f_auto,g_center,h_180,r_max,q_auto:best,w_180/profile_pic.jpg"
 subTitle: "Full-stack JavaScript Developer"
 ---

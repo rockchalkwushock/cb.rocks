@@ -1,13 +1,8 @@
 
 .social-icon {
-  fill: #000;
+  fill: #ed8c72;
   height: 40px;
-  opacity: 0.5;
   width: 40px;
-}
-
-.social-icon:hover {
-  opacity: 1;
 }
 
 .icon--ei-sc-facebook:hover {

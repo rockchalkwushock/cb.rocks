@@ -24,7 +24,7 @@ div.marketing {
 a.brand-link {
   animation: breath 2s linear infinite;
   border-radius: 50px;
-  color: rgba(83, 125, 167, 1);
+  color: rgba(41, 136, 188, 1);
   display: flex;
   flex-direction: column;
   font-family: 'Handlee', cursive;
@@ -48,31 +48,31 @@ a.brand-link:hover {
 
 @keyframes breath {
   0% {
-    background-color: rgba(255, 199, 56, 0.5);
-    box-shadow: 0 0 3px 3px rgba(83, 125, 167, 0.1), 0 0 3px 6px rgba(83, 125, 167, 0.1), 0 0 3px 9px rgba(83, 125, 167, 0.1);
+    background-color: rgba(244, 234, 222, 0.7);
+    box-shadow: 0 0 3px 3px rgba(237, 140, 114, 0.2), 0 0 3px 6px rgba(237, 140, 114, 0.2), 0 0 3px 9px rgba(237, 140, 114, 0.2);
   }
   50% {
-    background-color: rgba(255, 199, 56, 1);
-    box-shadow: 0 0 3px 6px rgba(83, 125, 167, 0.1), 0 0 3px 12px rgba(83, 125, 167, 0.1), 0 0 3px 18px rgba(83, 125, 167, 0.1);
+    background-color: rgba(244, 234, 222, 1);
+    box-shadow: 0 0 3px 6px rgba(237, 140, 114, 0.2), 0 0 3px 12px rgba(237, 140, 114, 0.2), 0 0 3px 18px rgba(237, 140, 114, 0.2);
   }
   100% {
-    background-color: rgba(255, 199, 56, 0.5);
-    box-shadow: 0 0 3px 3px rgba(83, 125, 167, 0.1), 0 0 3px 6px rgba(83, 125, 167, 0.1), 0 0 3px 9px rgba(83, 125, 167, 0.1);
+    background-color: rgba(244, 234, 222, 0.7);
+    box-shadow: 0 0 3px 3px rgba(237, 140, 114, 0.2), 0 0 3px 6px rgba(237, 140, 114, 0.2), 0 0 3px 9px rgba(237, 140, 114, 0.2);
   }
 }
 
 @keyframes breath-deeper {
   0% {
     background-color: rgba(255, 199, 56, 0.5);
-    box-shadow: 0 0 3px 3px rgba(83, 125, 167, 0.1), 0 0 3px 6px rgba(83, 125, 167, 0.1), 0 0 3px 9px rgba(83, 125, 167, 0.1), 0 0 3px 12px rgba(83, 125, 167, 0.1), 0 0 3px 15px rgba(83, 125, 167, 0.1);
+    box-shadow: 0 0 3px 3px rgba(237, 140, 114, 0.2), 0 0 3px 6px rgba(237, 140, 114, 0.2), 0 0 3px 9px rgba(237, 140, 114, 0.2), 0 0 3px 12px rgba(237, 140, 114, 0.2), 0 0 3px 15px rgba(237, 140, 114, 0.2);
   }
   50% {
     background-color: rgba(255, 199, 56, 1);
-    box-shadow: 0 0 3px 6px rgba(83, 125, 167, 0.1), 0 0 3px 12px rgba(83, 125, 167, 0.1), 0 0 3px 18px rgba(83, 125, 167, 0.1), 0 0 3px 24px rgba(83, 125, 167, 0.1), 0 0 3px 30px rgba(83, 125, 167, 0.1);
+    box-shadow: 0 0 3px 6px rgba(237, 140, 114, 0.2), 0 0 3px 12px rgba(237, 140, 114, 0.2), 0 0 3px 18px rgba(237, 140, 114, 0.2), 0 0 3px 24px rgba(237, 140, 114, 0.2), 0 0 3px 30px rgba(237, 140, 114, 0.2);
   }
   100% {
     background-color: rgba(255, 199, 56, 0.5);
-    box-shadow: 0 0 3px 3px rgba(83, 125, 167, 0.1), 0 0 3px 6px rgba(83, 125, 167, 0.1), 0 0 3px 9px rgba(83, 125, 167, 0.1), 0 0 3px 12px rgba(83, 125, 167, 0.1), 0 0 3px 15px rgba(83, 125, 167, 0.1);
+    box-shadow: 0 0 3px 3px rgba(237, 140, 114, 0.2), 0 0 3px 6px rgba(237, 140, 114, 0.2), 0 0 3px 9px rgba(237, 140, 114, 0.2), 0 0 3px 12px rgba(237, 140, 114, 0.2), 0 0 3px 15px rgba(237, 140, 114, 0.2);
   }
 }
 

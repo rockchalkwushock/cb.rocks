@@ -5,5 +5,6 @@ li.cert-card {
 }
 
 img.cert-img {
+  box-shadow: 10px 10px 20px rgba(47, 73, 110, 0.5);
   margin-bottom: 0;
 }

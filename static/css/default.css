@@ -6,6 +6,8 @@
 
 html,
 body {
+  background-color: #f4eade;
+  color: #2f496e;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -68,22 +70,22 @@ footer a {
 }
 
 a {
-  color: rgba(15, 103, 255, 0.6);
+  color: #ed8c72;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 a:visited {
-  color: rgba(15, 103, 255, 0.6);
+  color: #ed8c72;
 }
 a:hover {
-  color: rgba(15, 103, 255, 1);
+  color: #2988bc;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   opacity: 0.8;
-}
+} */
 
 ul {
   list-style: none;
