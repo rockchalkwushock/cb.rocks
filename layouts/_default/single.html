@@ -43,6 +43,7 @@
     <section class="post-body" itemprop="articleBody">
       {{ .Content }}
     </section>
+    {{ partialCached "share.html" . }}
   </article>
 </main>
 {{ end }}

@@ -1,0 +1,16 @@
+div.share {
+  background-color: rgba(41, 136, 188, 0.2);
+  /* font-size: 1.5em; */
+  margin-top: 1em;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+@media (min-width: 425px) {
+  div.share {
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 1em;
+    width: 50%;
+  }
+}

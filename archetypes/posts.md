@@ -14,6 +14,7 @@ flip: false
 highlight: false
 onMedium: false
 mediumUrl: ""
+share: ["Like it?", "Love it?", "Don't forget to share it!"]
 ---
 
 <!-- End of Post -->
