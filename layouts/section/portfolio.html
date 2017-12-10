@@ -1,30 +1,27 @@
 {{ define "main" }}
-<main>
-    <h1>{{ .Title }}</h1>
-  <section class="portfolio">
-    <ul class="grid" id="cards">
-      {{ range .Site.Data.projects }}
-        <li id="card-{{ .id }}" class="card" data-key="{{ .id }}">
-          <div class="front side">
-            <h1>{{ .name }}</h1>
-            <div class="tech">
-              {{ range .tech }}
-                <img alt="{{ . }}-icon" class="tech-icon" src="https://res.cloudinary.com/rockchalkwushock/{{ . }}.svg">
-              {{ end }}
-            </div>
+<section class="portfolio">
+  <ul class="grid" id="cards">
+    {{ range .Site.Data.projects }}
+      <li id="card-{{ .id }}" class="card" data-key="{{ .id }}">
+        <div class="front side">
+          <h1>{{ .name }}</h1>
+          <div class="tech">
+            {{ range .tech }}
+              <img alt="{{ . }}-icon" class="tech-icon" src="https://res.cloudinary.com/rockchalkwushock/{{ . }}.svg">
+            {{ end }}
           </div>
-          <div class="back side">
-            <p>{{ .desc }}</p>
-            <div class="card-links">
-              {{ if .site }}
-                <a href="{{ .site }}" class="card-link">Site</a>
-              {{ end }}
-              <a href="{{ .source }}" class="card-link">Code</a>
-            </div>
+        </div>
+        <div class="back side">
+          <p>{{ .desc }}</p>
+          <div class="card-links">
+            {{ if .site }}
+              <a href="{{ .site }}" class="card-link">Site</a>
+            {{ end }}
+            <a href="{{ .source }}" class="card-link">Code</a>
           </div>
-        </li>
-      {{ end }}
-    </ul>
-  </section>
-</main>
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+</section>
 {{ end }}

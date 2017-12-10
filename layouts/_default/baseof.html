@@ -5,7 +5,12 @@
 </head>
 <body>
   <div class="wrapper" itemprop="mainContentOfPage">
-    {{ block "main" . }} {{ end }}
+    <main>
+      {{ if and (ne .Page.Type "tags") (ne .Page.Title "RCWS Development") }}
+        <h1>{{ .Title }}</h1>
+      {{ end }}
+      {{ block "main" . }} {{ end }}
+    </main>
     {{ partial "navigation.html" . }}
     <hr>
     {{ partialCached "footer.html" . }}

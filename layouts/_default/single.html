@@ -2,7 +2,6 @@
 <main>
   <article class="post">
     <header class="post-heading">
-      <h1 itemprop="headline">{{ .Title }}</h1>
       <div class="headline">
       <h2>
         {{ .Date.Format "Jan 2, 2006" }}
@@ -21,7 +20,7 @@
       </h2>
       <div class="tag-container">
         <div data-icon="ei-tag" data-size="s"></div>
-        <span class="tags">
+        <span class="post-tags">
           {{ with .Params.tags }}
             {{ if ge (len .) 1 }}
                 {{ range . }}
@@ -40,9 +39,9 @@
       </section>
     {{ end }}
     <hr>
-    <section class="post-body" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
       {{ .Content }}
-    </section>
+    </div>
     {{ partialCached "share.html" . }}
   </article>
 </main>

@@ -1,5 +1,4 @@
 {{ define "main" }}
-<main>
   {{ $tag := .Page.Title }}
   {{ range .Data.Pages.GroupByDate "2006" }}
     <h1>{{ .Key }} - {{ $tag }}</h1>
@@ -17,5 +16,4 @@
     </section>
   {{ end }}
   {{ partial "pagination.html" . }}
-</main>
 {{ end }}

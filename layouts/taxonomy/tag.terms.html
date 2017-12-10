@@ -1,12 +1,9 @@
 {{ define "main" }}
-<main>
-  <h1>{{ .Title }}</h1>
-  <section id="tags" class="tag-cloud">
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-      <span class="tags">
-        <a href="/tags/{{ $name | urlize }}" rel="{{ len $taxonomy }}">{{ $name }}({{ len $taxonomy }})</a>
-      </span>
-    {{ end }}
-  </section>
-</main>
+<section id="tags" class="tag-cloud">
+  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    <span class="tags">
+      <a href="/tags/{{ $name | urlize }}" rel="{{ len $taxonomy }}">{{ $name }}({{ len $taxonomy }})</a>
+    </span>
+  {{ end }}
+</section>
 {{ end }}
