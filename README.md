@@ -1,4 +1,4 @@
-# codybrunner.rocks
+# codybrunner.rocks :metal: :sunglasses: :fire:
 
 Yeah it's pretty vain and conceited but I like it :joy:
 
