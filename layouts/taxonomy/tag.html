@@ -5,12 +5,14 @@
     <section class="tags">
       <ul>
         {{ range .Pages }}
-          <div class="tagged-post">
-            <div class="post-date">{{ .Date.Format "Jan 2" }}</div>
-            <a href="{{ .Permalink }}" class="post-link">
-              {{ .Title }}
+          <li class="post-link">
+            <a href="{{ .Permalink }}">
+              <div class="tagged-post">
+                <div class="post-date">{{ .Date.Format "Jan 2" }}</div>
+                {{ .Title }}
+              </div>
             </a>
-          </div>
+          </li>
         {{ end }}
       </ul>
     </section>

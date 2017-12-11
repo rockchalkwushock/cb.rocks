@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
 html,
 body {
   background-color: #f4eade;
@@ -261,25 +260,49 @@ p.paginator-pages {
 .tags {
   align-items: center;
 }
+.post-link {
+  padding: 0 0.25em;
+}
+.post-link:hover {
+  background-color: rgba(47, 73, 110, 0.2);
+}
+.post-link a {
+  color: #2f496e;
+}
+.post-link a:hover {
+  color: #2988bc;
+}
 .tagged-post {
   padding: 0.5em 0;
 }
 .post-date {
   margin-bottom: 0.25em;
 }
-/* .tag-cloud {
+.tag-cloud {
+  display: block;
   margin: 2em auto;
   text-align: center;
   width: 80%;
-} */
+}
 @media (orientation: landscape) {
-  section.tags ul {
+  .tags {
+    margin: 1em 0.5em;
+  }
+  .tags ul {
     width: 70%;
   }
   .tagged-post {
     align-items: center;
     display: flex;
     justify-content: space-between;
+  }
+  .tag-cloud {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .tag-cloud {
+    width: 60%;
   }
 }
 /* ================================ */
@@ -346,14 +369,12 @@ a.card-link {
     grid-column: 2/3;
   }
 }
-@media (max-width: 568px) {
-  ul.grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-}
 /* ================================ */
 /* =============CERTS============== */
 /* ================================ */
+.certs {
+  margin: 2em 1em;
+}
 li.cert-card {
   align-items: center;
   display: flex;
@@ -366,29 +387,26 @@ img.cert-img {
 /* ================================ */
 /* ===========SHORTCODES=========== */
 /* ================================ */
-div.responsive-video {
+.responsive-video {
   height: 0;
   margin: 1em 0;
 	padding-bottom: 56.25%;
   padding-top: 25px;
   position: relative;
 }
-
-div.responsive-video iframe {
+.responsive-video iframe {
   position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
-
-div.marketing {
+.marketing {
   align-items: center;
   display: flex;
   justify-content: space-around;
   margin: 1.2em 0;
 }
-
 a.brand-link {
   animation: breath 2s linear infinite;
   border-radius: 50px;
@@ -408,12 +426,10 @@ a.brand-link {
   -moz-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-
 a.brand-link:hover {
   animation: breath-deeper 3s linear infinite;
   transform: scale(1);
 }
-
 @keyframes breath {
   0% {
     background-color: rgba(244, 234, 222, 0.7);
@@ -428,7 +444,6 @@ a.brand-link:hover {
     box-shadow: 0 0 3px 3px rgba(237, 140, 114, 0.2), 0 0 3px 6px rgba(237, 140, 114, 0.2), 0 0 3px 9px rgba(237, 140, 114, 0.2);
   }
 }
-
 @keyframes breath-deeper {
   0% {
     background-color: rgba(255, 199, 56, 0.5);
@@ -443,7 +458,6 @@ a.brand-link:hover {
     box-shadow: 0 0 3px 3px rgba(237, 140, 114, 0.2), 0 0 3px 6px rgba(237, 140, 114, 0.2), 0 0 3px 9px rgba(237, 140, 114, 0.2), 0 0 3px 12px rgba(237, 140, 114, 0.2), 0 0 3px 15px rgba(237, 140, 114, 0.2);
   }
 }
-
 @media (max-width: 425px) {
   div.marketing {
     justify-content: space-between;
@@ -458,14 +472,14 @@ a.brand-link:hover {
 /* ================================ */
 /* ==============SHARE============= */
 /* ================================ */
-div.share {
+.share {
   background-color: rgba(41, 136, 188, 0.2);
   margin-top: 1em;
   padding: 0.5em 0;
   text-align: center;
 }
 @media (min-width: 425px) {
-  div.share {
+  .share {
     font-size: 1.5em;
     margin: auto;
     margin-top: 1em;
@@ -473,12 +487,12 @@ div.share {
   }
 }
 @media (max-width: 600px) and (orientation: landscape) {
-  div.share {
+  .share {
     width: 75%;
   }
 }
 @media (min-width: 768px) {
-  div.share {
+  .share {
     width: 50%;
   }
 }

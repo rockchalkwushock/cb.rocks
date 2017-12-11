@@ -8,7 +8,9 @@
             <div class="disabled" data-icon="ei-chevron-left" data-size="m"></div>
         </a>
     {{ end }}
+    {{ if gt .Paginator.TotalPages 1 }}
     <p class="paginator-pages">{{ .Paginator.PageNumber }} - {{ .Paginator.TotalPages }}</p>
+    {{ end }}
     {{ if .Paginator.HasNext }}
         <a class="pagination-link" href="{{ .Paginator.Next.URL }}" itemprop="pagination">
             <div data-icon="ei-chevron-right" data-size="m"></div>

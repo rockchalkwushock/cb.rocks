@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }} itemscope itemtype="{{ if or (eq .Page.Type "post") (eq .Page.URL "/about/")}}http://schema.org/Article{{ else }}http://schema.org/WebPage{{ end }}">
+<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }} itemscope itemtype="{{ if or (eq .Page.Type "post") (eq .Page.URL "/about/")}}http://schema.org/Article{{ else }}http://schema.org/WebPage{{ end }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
   {{ partial "meta.html" . }}
 </head>
