@@ -5,7 +5,6 @@
 </head>
 <body>
   {{ partialCached "fb.html" . }}
-  {{ partialCached "googletag-noscript.html" . }}
   <div class="wrapper" itemprop="mainContentOfPage">
     <main>
       {{ if and (ne .Page.Type "tags") (ne .Page.Title "Cody Rocks!") }}
