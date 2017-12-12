@@ -5,5 +5,4 @@ src/node_modules
 public/
 
 # temporary
-content/posts
 temp.js
