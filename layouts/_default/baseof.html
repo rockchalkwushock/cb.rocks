@@ -4,6 +4,7 @@
   {{ partial "meta.html" . }}
 </head>
 <body>
+  {{ partialCached "fb.html" . }}
   {{ partialCached "googletag-noscript.html" . }}
   <div class="wrapper" itemprop="mainContentOfPage">
     <main>
