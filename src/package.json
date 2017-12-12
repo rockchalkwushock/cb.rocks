@@ -1,0 +1,22 @@
+{
+  "name": "codybrunner.rocks",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "My personal website & blog built using Hugo.",
+  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
+  "scripts": {
+    "build": "yarn clean && yarn build:min:css && yarn build:min:js",
+    "build:min:css": "cleancss -d -O2 -o ../static/styles.min.css ./css/styles.css",
+    "build:min:js": "webpack -p",
+    "clean": "rm -rf ../static/codybrunner.rocks-sw.js ../static/bundle.js ../static/styles.min.css"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "clean-css-cli": "^4.1.10",
+    "sw-precache-webpack-plugin": "^0.11.4",
+    "webpack": "^3.10.0"
+  }
+}
