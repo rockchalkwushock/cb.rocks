@@ -2,6 +2,7 @@
   <img alt="{{ .Params.author }}" itemprop="image" src="{{ .Params.image }}">
   <h1>{{ .Params.author }}</h1>
   <h4>{{ .Params.subTitle }}</h4>
+  {{ .Content }}
   <div class="icons-container">
     {{ range $key, $val := .Site.Params.icons }}
       <a href="{{ $val }}">

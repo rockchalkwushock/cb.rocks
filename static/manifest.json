@@ -3,7 +3,7 @@
     "short_name": "Cody Rocks",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "start_url": "https://codybrunner.rocks",
+    "start_url": "https://codybrunner.rocks/",
     "display": "standalone",
     "description": "Web development portfolio & blog for Cody Brunner.",
     "icons": [

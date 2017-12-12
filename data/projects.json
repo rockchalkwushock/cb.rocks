@@ -5,7 +5,7 @@
     "name": "masha eltsova photography",
     "site": "https://mashaeltsovaphotography.com/",
     "source": "https://github.com/rockchalkwushock/mashaeltsova-photography/",
-    "tech": ["nextjs", "react"]
+    "tech": ["circleci", "jest","nextjs", "react"]
   },
   "two": {
     "desc": "My web development portfolio & blog website built with Hugo with a little jQuery.",
@@ -13,7 +13,7 @@
     "name": "codybrunner.rocks",
     "site": "https://codybrunner.rocks/",
     "source": "https://github.com/rockchalkwushock/codybrunner.rocks/",
-    "tech": ["css-3", "html-5", "jquery", "markdown"]
+    "tech": ["css-3", "html-5", "jquery", "markdown", "webpack"]
   },
   "three": {
     "desc": "Simple weather web application built with GraphQL, MaterializeCSS, & React. The project uses Preact at build time & react-weather-api.",
