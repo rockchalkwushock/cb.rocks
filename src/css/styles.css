@@ -184,9 +184,6 @@ section {
   line-height: 1.6;
   padding: 0.25em 0;
 }
-.about p code {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 .about pre {
   padding: 0.5em 0;
 }
@@ -287,9 +284,6 @@ article.post {
 .post-body p {
   line-height: 1.6;
   padding: 0.25em 0;
-}
-.post-body p code {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 .post-body pre {
   padding: 0.5em 0;

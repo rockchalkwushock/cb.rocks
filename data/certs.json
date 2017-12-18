@@ -8,5 +8,6 @@
   "seven": "node-react",
   "eight": "react-redux-ssr",
   "nine": "web-developer-bootcamp",
-  "ten": "webpack2"
+  "ten": "webpack2",
+  "eleven": "elixir-phoenix"
 }
