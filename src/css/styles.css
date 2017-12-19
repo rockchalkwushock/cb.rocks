@@ -494,6 +494,21 @@ img.cert-img {
 /* ================================ */
 /* ===========SHORTCODES=========== */
 /* ================================ */
+.in-md-image {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.25em;
+}
+.in-md-image picture img {
+  margin: 0;
+}
+.in-md-image p.img-caption {
+  font-size: 80%;
+  line-height: 1.4;
+  padding: 0;
+}
 .responsive-video {
   height: 0;
   margin: 1em 0;

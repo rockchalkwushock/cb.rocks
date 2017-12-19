@@ -1,0 +1,23 @@
+{{ if .IsNamedParams }}
+  <div class="in-md-image">
+    <picture>
+      <source media="(min-width: 768px)" srcset="https://res.cloudinary.com/rockchalkwushock/c_scale,f_auto,q_auto:best,w_425/{{ .Get "id" }}.{{ .Get "ext" }}">
+      <source media="(min-width: 425px)" srcset="https://res.cloudinary.com/rockchalkwushock/c_scale,f_auto,q_auto:best,w_375/{{ .Get "id" }}.{{ .Get "ext" }}">
+      <img alt="{{ .Get "alt" }}" src="" srcset="https://res.cloudinary.com/rockchalkwushock/c_scale,f_auto,q_auto:best,w_250/{{ .Get "id" }}.{{ .Get "ext" }}">
+    </picture>
+    {{ if len .Params | eq 4 }}
+      <p class="img-caption">{{ .Get "caption" }}</p>
+    {{ end }}
+  </div>
+{{ else }}
+  <div class="in-md-image">
+    <picture>
+      <source media="(min-width: 768px)" srcset="https://res.cloudinary.com/rockchalkwushock/c_scale,f_auto,q_auto:best,w_425/{{ .Get 1 }}.{{ .Get 2 }}">
+      <source media="(min-width: 425px)" srcset="https://res.cloudinary.com/rockchalkwushock/c_scale,f_auto,q_auto:best,w_375/{{ .Get 1 }}.{{ .Get 2 }}">
+      <img alt="{{ .Get 0 }}" src="" srcset="https://res.cloudinary.com/rockchalkwushock/c_scale,f_auto,q_auto:best,w_250/{{ .Get 1 }}.{{ .Get 2 }}">
+    </picture>
+    {{ if len .Params | eq 4 }}
+      <p class="img-caption">{{ .Get 3 }}</p>
+    {{ end }}
+  </div>
+{{ end }}
