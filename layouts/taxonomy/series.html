@@ -1,0 +1,21 @@
+{{ define "main" }}
+  {{ $series := .Page.Title }}
+  {{ range .Data.Pages.GroupByPublishDate "Jan 2" }}
+    <h1>{{ $series }}</h1>
+    <section class="series">
+      <ul>
+        {{ range .Pages }}
+          <li class="post-link">
+            <a href="{{ .Permalink }}">
+              <div class="series-post">
+                <div class="post-date">{{ .Date.Format "Jan 2" }}</div>
+                {{ .Title }}
+              </div>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+  {{ partial "pagination.html" . }}
+{{ end }}

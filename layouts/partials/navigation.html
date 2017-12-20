@@ -10,6 +10,8 @@
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
       {{ else if and (eq $currentPage.URL "/tags/") (eq .Identifier "tag")}}
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ else if and (eq $currentPage.URL "/series/") (eq .Identifier "series")}}
+        <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
       {{ else if and (eq $currentPage.URL "/portfolio/") (eq .Identifier "portfolio")}}
         <li><a class="hide" href="{{ .URL }}">{{ .Name }}</a></li>
       {{ else if and (eq $currentPage.URL "/certs/") (eq .Identifier "certifications")}}

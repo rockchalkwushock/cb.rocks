@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section id="tags" class="tag-cloud">
+  {{ range $name, $taxonomy := .Site.Taxonomies.series }}
+    <span class="tags">
+      <a href="/series/{{ $name | urlize }}" rel="{{ len $taxonomy }}">{{ $name }}({{ len $taxonomy }})</a>
+    </span>
+  {{ end }}
+</section>
+{{ end }}

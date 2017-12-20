@@ -323,7 +323,7 @@ p.paginator-pages {
 /* ================================ */
 /* =============TAGS=============== */
 /* ================================ */
-.tags {
+.tags, .series {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -340,7 +340,7 @@ p.paginator-pages {
 .post-link a:hover {
   color: #2988bc;
 }
-.tagged-post {
+.tagged-post, .series-post {
   padding: 0.5em 0;
 }
 .post-date {
