@@ -1,0 +1,9 @@
+{{ if not .Site.BuildDrafts }}
+<script type="text/javascript">
+  (function() {
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/codybrunner.rocks-sw.js');
+  }
+  })();
+</script>
+{{ end }}
