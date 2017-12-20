@@ -10,6 +10,9 @@
       {{ if and (ne .Page.Type "series") (ne .Page.Type "tags") (ne .Page.Title "Cody Rocks!") }}
         <h1>{{ .Title }}</h1>
       {{ end }}
+      {{ if or (eq .Page.URL "/posts/") (eq .Page.URL "/series/") (eq .Page.URL "/tags/")}}
+        {{ partial "content-navigation.html" . }}
+      {{ end }}
       {{ block "main" . }} {{ end }}
     </main>
     {{ partial "navigation.html" . }}
