@@ -1,11 +1,11 @@
 <footer>
   <p itemprop="copyrightHolder">
     {{ $year := now.Format "2006" }}
-    {{ if eq $year "2017" }}
+    {{- if eq $year "2017" -}}
       © 2017 Cody Brunner
-    {{ else }}
+    {{- else -}}
       © 2017-{{ $year }} Cody Brunner
-    {{ end }}
+    {{- end -}}
   </p>
   <a href="{{ .Site.Copyright }}">Some Rights Reserved</a>
   <p class="poweredby">Powered by <a href="https://gohugo.io/">Hugo</a>.</p>

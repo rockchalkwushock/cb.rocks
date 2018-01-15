@@ -1,23 +1,23 @@
 <nav class="paginator">
-    {{ if .Paginator.HasPrev }}
+    {{- if .Paginator.HasPrev -}}
         <a class="pagination-link" href="{{ .Paginator.Prev.URL }}" itemprop="pagination">
             <div data-icon="ei-chevron-left" data-size="m"></div>
         </a>
-    {{ else }}
+    {{- else -}}
         <a class="pagination-link" href="#" itemprop="pagination">
             <div class="disabled" data-icon="ei-chevron-left" data-size="m"></div>
         </a>
-    {{ end }}
-    {{ if gt .Paginator.TotalPages 1 }}
+    {{- end -}}
+    {{- if gt .Paginator.TotalPages 1 -}}
     <p class="paginator-pages">{{ .Paginator.PageNumber }} - {{ .Paginator.TotalPages }}</p>
-    {{ end }}
-    {{ if .Paginator.HasNext }}
+    {{- end -}}
+    {{- if .Paginator.HasNext -}}
         <a class="pagination-link" href="{{ .Paginator.Next.URL }}" itemprop="pagination">
             <div data-icon="ei-chevron-right" data-size="m"></div>
         </a>
-    {{ else }}
+    {{- else -}}
         <a class="pagination-link" href="#" itemprop="pagination">
             <div class="disabled" data-icon="ei-chevron-right" data-size="m"></div>
         </a>
-    {{ end }}
+    {{- end -}}
 </nav>

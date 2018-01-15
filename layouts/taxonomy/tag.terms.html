@@ -1,9 +1,9 @@
 {{ define "main" }}
 <section id="tags" class="tag-cloud">
-  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+  {{- range $name, $taxonomy := .Site.Taxonomies.tags -}}
     <span class="tags">
       <a href="/tags/{{ $name | urlize }}" rel="{{ len $taxonomy }}">{{ $name }}({{ len $taxonomy }})</a>
     </span>
-  {{ end }}
+  {{- end -}}
 </section>
 {{ end }}

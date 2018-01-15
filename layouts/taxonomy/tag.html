@@ -1,10 +1,10 @@
 {{ define "main" }}
   {{ $tag := .Page.Title }}
-  {{ range .Data.Pages.GroupByDate "2006" }}
+  {{- range .Data.Pages.GroupByDate "2006" -}}
     <h1>{{ .Key }} - {{ $tag }}</h1>
     <section class="tags">
       <ul>
-        {{ range .Pages }}
+        {{- range .Pages -}}
           <li class="post-link">
             <a href="{{ .Permalink }}">
               <div class="tagged-post">
@@ -13,9 +13,9 @@
               </div>
             </a>
           </li>
-        {{ end }}
+        {{- end -}}
       </ul>
     </section>
-  {{ end }}
+  {{- end -}}
   {{ partial "pagination.html" . }}
 {{ end }}

@@ -4,20 +4,16 @@
   {{ partial "meta.html" . }}
 </head>
 <body>
-  {{ partialCached "fb.html" . }}
   <div class="wrapper" itemprop="mainContentOfPage">
     <main>
-      {{ if and (ne .Page.Type "series") (ne .Page.Type "tags") (ne .Page.Title "Cody Rocks!") }}
+      {{- if and (ne .Page.Type "tags") (ne .Page.Title "Cody Rocks!") -}}
         <h1>{{ .Title }}</h1>
-      {{ end }}
-      {{ if or (eq .Page.URL "/posts/") (eq .Page.URL "/series/") (eq .Page.URL "/tags/")}}
-        {{ partial "content-navigation.html" . }}
-      {{ end }}
-      {{ block "main" . }} {{ end }}
+      {{- end -}}
+      {{- block "main" . -}} {{- end -}}
     </main>
     {{ partial "navigation.html" . }}
     <hr>
-    {{ partialCached "footer.html" . }}
+    {{ partial "footer.html" . }}
   </div>
   {{ partial "scripts.html" . }}
 </body>

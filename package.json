@@ -1,0 +1,41 @@
+{
+  "name": "codybrunner.rocks",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "My personal website & blog built using Hugo.",
+  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://codybrunner.rocks)",
+  "repository": "https://github.com/rockchalkwushock/codybrunner.rocks.git",
+  "scripts": {
+    "build:dev": "NODE_ENV=development webpack",
+    "build:prod": "NODE_ENV=production webpack -p",
+    "clean": "rm -rf public static",
+    "dev": "yarn clean && yarn build:dev",
+    "icons": "cp -R ./src/icons/ ./static/icons",
+    "start": "yarn clean && yarn build:prod"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "caniuse-lite": "^1.0.30000697",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "image-webpack-loader": "^3.4.2",
+    "imports-loader": "^0.7.1",
+    "postcss": "^6.0.14",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.9",
+    "style-loader": "^0.19.1",
+    "sw-precache-webpack-plugin": "^0.11.4",
+    "webpack": "^3.10.0"
+  }
+}

@@ -1,19 +1,24 @@
-{{ partialCached "google-analytics.html" . }}
+{{ partial "google-analytics.html" . }}
 {{ partial "service-worker.html" . }}
-{{ if .Params.evil }}
-<script src="{{ .Site.BaseURL }}custom-evilicons.min.js" type="text/javascript"></script>
-{{ end }}
-{{ if .Params.cloud }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="{{ .Site.BaseURL }}jquery.tagcloud.js" type="text/javascript"></script>
-<script src="{{ .Site.BaseURL }}tagcloud.js" type="text/javascript"></script>
-{{ else if .Params.flip}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.9/jquery.mobile-events.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
-<script src="{{ .Site.BaseURL }}bundle.js" type="text/javascript"></script>
-{{ end }}
-{{ if .Params.highlight }}
+{{- if .Params.evil -}}
+  <script src="{{ .Site.BaseURL }}custom-evilicons.min.js" type="text/javascript"></script>
+{{- end -}}
+{{- if .Params.cloud -}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{{ .Site.BaseURL }}jquery.tagcloud.js" type="text/javascript"></script>
+  <script src="{{ .Site.BaseURL }}tagcloud.js" type="text/javascript"></script>
+{{- else if .Params.flip -}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.9/jquery.mobile-events.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+  {{- if not .Site.BuildDrafts -}}
+    <script type="text/javascript" src="{{ .Site.BaseURL }}manifest.{{ .Site.Params.hash.manifest }}.js"></script>
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bundle.{{ .Site.Params.hash.bundle }}.js"></script>
+  {{- else -}}
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bundle.js"></script>
+  {{- end -}}
+{{- end -}}
+{{- if .Params.highlight -}}
   <script src="{{ .Site.BaseURL }}custom-highlight.min.js" type="text/javascript"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-{{ end }}
+{{- end -}}

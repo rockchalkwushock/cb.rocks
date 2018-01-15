@@ -1,9 +1,9 @@
 {{ define "main" }}
 <section class="posts">
   <ul class="posts-list">
-    {{ range .Paginator.Pages }}
+    {{- range .Paginator.Pages -}}
       {{ partial "li.html" . }}
-    {{ end }}
+    {{- end -}}
   </ul>
 </section>
 {{ partial "pagination.html" . }}

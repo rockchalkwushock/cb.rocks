@@ -8,14 +8,13 @@ type: "page"
 cloud: false
 evil: true
 flip: false
-image: "https://res.cloudinary.com/rockchalkwushock/b_rgb:f4eade,c_thumb,f_auto,g_center,h_180,r_max,q_auto:best,w_180/profile_pic.jpg"
-subTitle: "Full-stack JavaScript Developer"
+subTitle: "Full-Stack JavaScript Developer"
 ---
 
 > React | Node | GraphQL
 
 > Navy Veteran :anchor: (OEF x1)
 
->Wichita, Kansas :tornado: :us:
+> Wichita, Kansas :tornado: :us:
 
-> Currently @unemployed
+**Currently homeless & Macless due to :fire:**

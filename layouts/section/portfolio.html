@@ -1,27 +1,27 @@
 {{ define "main" }}
 <section class="portfolio">
   <ul class="grid" id="cards">
-    {{ range .Site.Data.projects }}
+    {{- range .Site.Data.projects -}}
       <li id="card-{{ .id }}" class="card" data-key="{{ .id }}">
         <div class="front side">
           <h1>{{ .name }}</h1>
           <div class="tech">
-            {{ range .tech }}
+            {{- range .tech -}}
               <img alt="{{ . }}-icon" class="tech-icon" src="https://res.cloudinary.com/rockchalkwushock/{{ . }}.svg">
-            {{ end }}
+            {{- end -}}
           </div>
         </div>
         <div class="back side">
           <p>{{ .desc }}</p>
           <div class="card-links">
-            {{ if .site }}
+            {{- if .site -}}
               <a href="{{ .site }}" class="card-link">Site</a>
-            {{ end }}
+            {{- end -}}
             <a href="{{ .source }}" class="card-link">Code</a>
           </div>
         </div>
       </li>
-    {{ end }}
+    {{- end -}}
   </ul>
 </section>
 {{ end }}

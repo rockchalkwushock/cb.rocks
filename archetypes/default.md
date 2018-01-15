@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
-lastMod: {{ .Date }}
+date: {{ dateFormat "2006-01-02" .Date }}
+lastMod: {{ dateFormat "2006-01-02" .Date }}
 author: "Cody Brunner"
 description: ""
 type: "page"

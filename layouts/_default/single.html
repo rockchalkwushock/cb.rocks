@@ -3,44 +3,43 @@
   <header class="post-heading">
     <div class="headline">
     <h2>
-      {{ .Date.Format "Jan 2, 2006" }}
+      {{ .Date.Format .Site.Params.dateFormat }}
     </h2>
     <h2>
-      {{ if lt 1 .WordCount }}
+      {{- if lt 1 .WordCount -}}
         {{ .WordCount }} words
-      {{ else }}
+      {{- else -}}
         {{ .WordCount }} word
-      {{ end }}
-      · {{ if eq 1 .ReadingTime }}
+      {{- end -}}
+      · {{- if eq 1 .ReadingTime -}}
         {{ .ReadingTime }} minute read
-      {{ else }}
+      {{- else -}}
         {{ .ReadingTime }} minutes read
-      {{ end }}
+      {{- end -}}
     </h2>
     <div class="tag-container">
       <div data-icon="ei-tag" data-size="s"></div>
       <span class="post-tags">
-        {{ with .Params.tags }}
-          {{ if ge (len .) 1 }}
-              {{ range . }}
-                <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
-              {{ end }}
-          {{ end }}
-        {{ end}}
+        {{- with .Params.tags -}}
+          {{- if ge (len .) 1 -}}
+              {{- range . -}}
+                <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }} </a>
+              {{- end -}}
+          {{- end -}}
+        {{- end -}}
       </span>
     </div>
     </div>
   </header>
-  {{ if .Params.onMedium}}
+  {{- if .Params.onMedium -}}
     <hr>
     <div class="extra">
       Read the article on <a href="{{ .Params.mediumUrl }}">Medium.</a>
     </div>
-  {{ end }}
+  {{- end -}}
   <hr>
   <div class="post-body" itemprop="articleBody">
     {{ .Content }}
   </div>
-  {{ partialCached "share.html" . }}
 </article>
 {{ end }}

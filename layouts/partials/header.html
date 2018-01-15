@@ -1,13 +1,13 @@
 <header>
-  <img alt="{{ .Params.author }}" itemprop="image" src="{{ .Params.image }}">
+  <div class="profile-pic" itemprop="image"></div>
   <h1>{{ .Params.author }}</h1>
   <h4>{{ .Params.subTitle }}</h4>
   {{ .Content }}
   <div class="icons-container">
-    {{ range $key, $val := .Site.Params.icons }}
+    {{- range $key, $val := .Site.Params.icons -}}
       <a href="{{ $val }}">
         <div class="social-icon" data-icon="ei-sc-{{ $key }}"></div>
       </a>
-    {{ end }}
+    {{- end -}}
   </div>
 </header>

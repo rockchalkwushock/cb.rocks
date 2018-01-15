@@ -1,11 +1,11 @@
 {{ define "main" }}
 <section class="certs">
   <ul class="grid">
-    {{ range .Site.Data.certs }}
+    {{- range .Site.Data.certs -}}
       <li class="cert-card">
         <img alt="{{ . }}" class="cert-img" src="https://res.cloudinary.com/rockchalkwushock/c_scale,f_auto,q_auto:good,w_280/certs/{{ . }}.jpg">
       </li>
-    {{ end }}
+    {{- end -}}
     </ul>
 </section>
 {{ end }}

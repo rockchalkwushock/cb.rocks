@@ -1,9 +1,9 @@
-{{ if not .Site.BuildDrafts }}
+{{- if not .Site.BuildDrafts -}}
 <script type="text/javascript">
   (function() {
   if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/codybrunner.rocks-sw.js');
+    navigator.serviceWorker.register('/service-worker.js');
   }
   })();
 </script>
-{{ end }}
+{{- end -}}
