@@ -1,7 +1,3 @@
-# codybrunner.rocks :metal: :sunglasses: :fire:
+# codybrunner.rocks [DEPRECATED]
 
-Yeah it's pretty vain and conceited but I like it :joy:
-
-## Description
-
-This is my personal website that hosts my portfolio and blog. It is generated using [`hugo`](https://gohugo.io/). All views & functionality of the website is written by myself.
+The new website can be found at the same domain [https://codybrunner.rocks](https://codybrunner.rocks) and the code base is now located [here](https://github.com/rockchalkwushock/codybrunner.rocks).
